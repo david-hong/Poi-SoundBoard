@@ -1,419 +1,441 @@
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".MainActivityFragment">
-    <RelativeLayout android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:id="@+id/ll1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
-            <Button
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:text="Poi 1"
-                android:id="@+id/p1"
-                android:onClick="poi1" />
-            <Button
-                android:layout_toRightOf="@+id/p1"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p2"
-                android:text="Poi 2"
-                android:onClick="poi2" />
-            <Button
-                android:layout_toRightOf="@+id/p2"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p3"
-                android:text="Poi 3"
-                android:onClick="poi3" />
-            <Button
-                android:layout_toRightOf="@+id/p3"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:id="@+id/p4"
-                android:text="Poi 4"
-                android:onClick="poi4" />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/ll2"
-            android:layout_below="@+id/ll1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
-            <Button
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p5"
-                android:text="Poi 5"
-                android:onClick="poi5" />
-            <Button
-                android:layout_toRightOf="@+id/p5"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p6"
-                android:text="Poi 6"
-                android:onClick="poi6" />
-            <Button
-                android:layout_toRightOf="@+id/p6"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p7"
-                android:text="Poi 7"
-                android:onClick="poi7" />
-            <Button
-                android:layout_toRightOf="@+id/p7"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:id="@+id/p8"
-                android:text="Poi 8"
-                android:onClick="poi8" />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/ll3"
-            android:layout_below="@+id/ll2"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
-            <Button
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p9"
-                android:text="Poi 9"
-                android:onClick="poi9" />
-            <Button
-                android:layout_toRightOf="@+id/p9"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p10"
-                android:text="Poi 10"
-                android:onClick="poi10" />
-            <Button
-                android:layout_toRightOf="@+id/p10"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p11"
-                android:text="Poi 11"
-                android:onClick="poi11" />
-            <Button
-                android:layout_toRightOf="@+id/p11"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:id="@+id/p12"
-                android:text="Poi 12"
-                android:onClick="poi12" />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/ll4"
-            android:layout_below="@+id/ll3"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
-            <Button
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p13"
-                android:text="Poi 13"
-                android:onClick="poi13" />
-            <Button
-                android:layout_toRightOf="@+id/p13"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p14"
-                android:text="Poi 14"
-                android:onClick="poi14" />
-            <Button
-                android:layout_toRightOf="@+id/p14"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p15"
-                android:text="Poi 15"
-                android:onClick="poi15" />
-            <Button
-                android:layout_toRightOf="@+id/p15"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:id="@+id/p16"
-                android:text="Poi 16"
-                android:onClick="poi16" />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/ll5"
-            android:layout_below="@+id/ll4"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
-            <Button
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p17"
-                android:text="Poi 17"
-                android:onClick="poi17" />
-            <Button
-                android:layout_toRightOf="@+id/p17"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p18"
-                android:text="Poi 18"
-                android:onClick="poi18" />
-            <Button
-                android:layout_toRightOf="@+id/p18"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p19"
-                android:text="Poi 19"
-                android:onClick="poi19" />
-            <Button
-                android:layout_toRightOf="@+id/p19"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:id="@+id/p20"
-                android:text="Poi 20"
-                android:onClick="poi20" />
-        </LinearLayout>
+    tools:context=".MainActivityFragment"
+    android:background="@drawable/bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:alpha="0.7"
+                    android:layout_marginRight="3dp"
+                    android:text="Poi 1"
+                    android:id="@+id/p1"
+                    android:onClick="poi1" />
+                <Button
+                    android:layout_toRightOf="@+id/p1"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p2"
+                    android:text="Poi 2"
+                    android:onClick="poi2" />
+                <Button
+                    android:layout_toRightOf="@+id/p2"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p3"
+                    android:text="Poi 3"
+                    android:onClick="poi3" />
+                <Button
+                    android:layout_toRightOf="@+id/p3"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:alpha="0.7"
+                    android:id="@+id/p4"
+                    android:text="Poi 4"
+                    android:onClick="poi4" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_below="@+id/ll1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p5"
+                    android:text="Poi 5"
+                    android:onClick="poi5" />
+                <Button
+                    android:layout_toRightOf="@+id/p5"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p6"
+                    android:text="Poi 6"
+                    android:onClick="poi6" />
+                <Button
+                    android:layout_toRightOf="@+id/p6"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p7"
+                    android:text="Poi 7"
+                    android:onClick="poi7" />
+                <Button
+                    android:layout_toRightOf="@+id/p7"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:alpha="0.7"
+                    android:id="@+id/p8"
+                    android:text="Poi 8"
+                    android:onClick="poi8" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_below="@+id/ll2"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p9"
+                    android:text="Poi 9"
+                    android:onClick="poi9" />
+                <Button
+                    android:layout_toRightOf="@+id/p9"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p10"
+                    android:text="Poi 10"
+                    android:onClick="poi10" />
+                <Button
+                    android:layout_toRightOf="@+id/p10"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p11"
+                    android:text="Poi 11"
+                    android:onClick="poi11" />
+                <Button
+                    android:layout_toRightOf="@+id/p11"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:alpha="0.7"
+                    android:id="@+id/p12"
+                    android:text="Poi 12"
+                    android:onClick="poi12" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_below="@+id/ll3"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p13"
+                    android:text="Poi 13"
+                    android:onClick="poi13" />
+                <Button
+                    android:layout_toRightOf="@+id/p13"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p14"
+                    android:text="Poi 14"
+                    android:onClick="poi14" />
+                <Button
+                    android:layout_toRightOf="@+id/p14"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p15"
+                    android:text="Poi 15"
+                    android:onClick="poi15" />
+                <Button
+                    android:layout_toRightOf="@+id/p15"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:alpha="0.7"
+                    android:id="@+id/p16"
+                    android:text="Poi 16"
+                    android:onClick="poi16" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll5"
+                android:layout_below="@+id/ll4"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p17"
+                    android:text="Poi 17"
+                    android:onClick="poi17" />
+                <Button
+                    android:layout_toRightOf="@+id/p17"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p18"
+                    android:text="Poi 18"
+                    android:onClick="poi18" />
+                <Button
+                    android:layout_toRightOf="@+id/p18"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p19"
+                    android:text="Poi 19"
+                    android:onClick="poi19" />
+                <Button
+                    android:layout_toRightOf="@+id/p19"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:alpha="0.7"
+                    android:id="@+id/p20"
+                    android:text="Poi 20"
+                    android:onClick="poi20" />
+            </LinearLayout>
 
 
-        <LinearLayout
-            android:id="@+id/ll6"
-            android:layout_below="@+id/ll5"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
-            <Button
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p21"
-                android:text="Poi 21"
-                android:onClick="poi21" />
-            <Button
-                android:layout_toRightOf="@+id/p21"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p22"
-                android:text="Poi 22"
-                android:onClick="poi22" />
-            <Button
-                android:layout_toRightOf="@+id/p22"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p23"
-                android:text="Poi 23"
-                android:onClick="poi23" />
-            <Button
-                android:layout_toRightOf="@+id/p23"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:id="@+id/p24"
-                android:text="Poi 24"
-                android:onClick="poi24" />
-        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll6"
+                android:layout_below="@+id/ll5"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p21"
+                    android:text="Poi 21"
+                    android:onClick="poi21" />
+                <Button
+                    android:layout_toRightOf="@+id/p21"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p22"
+                    android:text="Poi 22"
+                    android:onClick="poi22" />
+                <Button
+                    android:layout_toRightOf="@+id/p22"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p23"
+                    android:text="Poi 23"
+                    android:onClick="poi23" />
+                <Button
+                    android:layout_toRightOf="@+id/p23"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:alpha="0.7"
+                    android:id="@+id/p24"
+                    android:text="Poi 24"
+                    android:onClick="poi24" />
+            </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/ll7"
-            android:layout_below="@+id/ll6"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
-            <Button
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p25"
-                android:text="Poi 25"
-                android:onClick="poi25" />
-            <Button
-                android:layout_toRightOf="@+id/p25"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p26"
-                android:text="Poi 26"
-                android:onClick="poi26" />
-            <Button
-                android:layout_toRightOf="@+id/p26"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p27"
-                android:text="Poi 27"
-                android:onClick="poi27" />
-            <Button
-                android:layout_toRightOf="@+id/p27"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:id="@+id/p28"
-                android:text="Poi 28"
-                android:onClick="poi28" />
-        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll7"
+                android:layout_below="@+id/ll6"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p25"
+                    android:text="Poi 25"
+                    android:onClick="poi25" />
+                <Button
+                    android:layout_toRightOf="@+id/p25"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p26"
+                    android:text="Poi 26"
+                    android:onClick="poi26" />
+                <Button
+                    android:layout_toRightOf="@+id/p26"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p27"
+                    android:text="Poi 27"
+                    android:onClick="poi27" />
+                <Button
+                    android:layout_toRightOf="@+id/p27"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:alpha="0.7"
+                    android:id="@+id/p28"
+                    android:text="Poi 28"
+                    android:onClick="poi28" />
+            </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/ll8"
-            android:layout_below="@+id/ll7"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
-            <Button
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p29"
-                android:text="Poi 29"
-                android:onClick="poi29" />
-            <Button
-                android:layout_toRightOf="@+id/p29"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p30"
-                android:text="Poi 30"
-                android:onClick="poi30" />
-            <Button
-                android:layout_toRightOf="@+id/p30"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p31"
-                android:text="Poi 31"
-                android:onClick="poi31" />
-            <Button
-                android:layout_toRightOf="@+id/p31"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:id="@+id/p32"
-                android:text="Poi 32"
-                android:onClick="poi32" />
-        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll8"
+                android:layout_below="@+id/ll7"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p29"
+                    android:text="Poi 29"
+                    android:onClick="poi29" />
+                <Button
+                    android:layout_toRightOf="@+id/p29"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p30"
+                    android:text="Poi 30"
+                    android:onClick="poi30" />
+                <Button
+                    android:layout_toRightOf="@+id/p30"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p31"
+                    android:text="Poi 31"
+                    android:onClick="poi31" />
+                <Button
+                    android:layout_toRightOf="@+id/p31"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:alpha="0.7"
+                    android:id="@+id/p32"
+                    android:text="Poi 32"
+                    android:onClick="poi32" />
+            </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/ll9"
-            android:layout_below="@+id/ll8"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
-            <Button
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p33"
-                android:text="Poi 33"
-                android:onClick="poi33" />
-            <Button
-                android:layout_toRightOf="@+id/p33"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p34"
-                android:text="Poi 34"
-                android:onClick="poi34" />
-            <Button
-                android:layout_toRightOf="@+id/p34"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p35"
-                android:text="Poi 35"
-                android:onClick="poi35" />
-            <Button
-                android:layout_toRightOf="@+id/p35"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:id="@+id/p36"
-                android:text="Poi 36"
-                android:onClick="poi36" />
-        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll9"
+                android:layout_below="@+id/ll8"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p33"
+                    android:text="Poi 33"
+                    android:onClick="poi33" />
+                <Button
+                    android:layout_toRightOf="@+id/p33"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p34"
+                    android:text="Poi 34"
+                    android:onClick="poi34" />
+                <Button
+                    android:layout_toRightOf="@+id/p34"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p35"
+                    android:text="Poi 35"
+                    android:onClick="poi35" />
+                <Button
+                    android:layout_toRightOf="@+id/p35"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:alpha="0.7"
+                    android:id="@+id/p36"
+                    android:text="Poi 36"
+                    android:onClick="poi36" />
+            </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/ll10"
-            android:layout_below="@+id/ll9"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
-            <Button
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p37"
-                android:text="Poi 37"
-                android:onClick="poi37" />
-            <Button
-                android:layout_toRightOf="@+id/p37"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p38"
-                android:text="Poi 38"
-                android:onClick="poi38" />
-            <Button
-                android:layout_toRightOf="@+id/p38"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="3dp"
-                android:id="@+id/p39"
-                android:text="Poi 39"
-                android:onClick="poi39" />
-            <Button
-                android:layout_toRightOf="@+id/p39"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:id="@+id/p40"
-                android:text="Poi 40"
-                android:onClick="poi40" />
-        </LinearLayout>
-    </RelativeLayout>
-</ScrollView>
+            <LinearLayout
+                android:id="@+id/ll10"
+                android:layout_below="@+id/ll9"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p37"
+                    android:text="Poi 37"
+                    android:onClick="poi37" />
+                <Button
+                    android:layout_toRightOf="@+id/p37"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p38"
+                    android:text="Poi 38"
+                    android:onClick="poi38" />
+                <Button
+                    android:layout_toRightOf="@+id/p38"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" android:alpha="0.7"
+                    android:id="@+id/p39"
+                    android:text="Poi 39"
+                    android:onClick="poi39" />
+                <Button
+                    android:layout_toRightOf="@+id/p39"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:alpha="0.7"
+                    android:id="@+id/p40"
+                    android:text="Poi 40"
+                    android:onClick="poi40" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/poiAni"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
